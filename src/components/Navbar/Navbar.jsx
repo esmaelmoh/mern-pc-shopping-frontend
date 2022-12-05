@@ -47,6 +47,7 @@ const Navbar = () => {
                   <div className='sn-link'><a href=""><FaTiktok/></a><a className='sn-name' href="https://www.tiktok.com/en/">TIKTOK</a></div> 
            </div>
             </div>
+            <Link to="/login">Admin </Link>
             {!admin&&<li onClick={()=>setShow(!show)} ><Link to="/login">Admin </Link></li>}
             {admin&&(<li onClick={()=>{dispatch({type:'LOGOUT'}); window.location.replace('/')}}><Link to="/admin">Logout</Link></li>)}
             {/* <li className='menu-bar'><Link to="/contact"><FaBars/> MENU</Link></li> */}
