@@ -16,7 +16,8 @@ export const ContextProvider = ({ children }) => {
     localStorage.setItem("admin", JSON.stringify(state.admin));
   }, [state.admin]);
 
-  const url = "http://localhost:5000/";
+  // const url = "http://localhost:5000/";
+  const url = "https://mern-pc-shopping-api.onrender.com";
   return (
     <Context.Provider
       value={{
