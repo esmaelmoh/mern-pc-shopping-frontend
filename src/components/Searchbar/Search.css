@@ -1,0 +1,33 @@
+.search-field{
+    width: 50vw;
+    min-width: 400px;
+    padding: 15px 40px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 17px;
+    border: none;
+    border-radius: 30px;
+    border-color: rgb(100, 100, 100);
+    background-color: rgb(240, 240, 240);
+}
+.search-field:focus{
+    outline: none;
+}
+.search-container{
+    /* width: 600px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.search-wrapper{
+    position: relative;
+}
+.icon{
+    cursor: pointer;
+    color: rgb(44, 44, 44);
+    font-size: 20px;
+    position: absolute;
+    top: 80px;
+    right: 25px;
+}

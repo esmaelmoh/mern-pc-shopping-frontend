@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'tarrget';
+    src:url(../../fonts/Azonix-1VB0.otf) 
+  }  
+.contact-title{
+    align-self: center;
+    padding: 3rem;
+    background-color: rgb(248, 247, 247);;
+    padding-left: 4rem;
+    font-family: 'Poppins';
+    color: rgb(77, 77, 77);
+}

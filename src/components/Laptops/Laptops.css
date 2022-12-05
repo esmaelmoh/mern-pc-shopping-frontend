@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'tarrget';
+    src:url(../../fonts/Azonix-1VB0.otf) 
+  } 
+.laptops{
+    display: flex;
+    width:90vw;
+    gap: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.lap-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.on-sale{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    background-color: rgb(248, 248, 248);
+    font-family: 'tarrget';
+    font-size: 35px;
+    padding: 2rem;
+    color: rgb(36, 36, 36);
+}
+.btn-loadmore{
+    padding: 8px 40px;
+    background-color: white;
+    border-radius: 20px;
+    border-color: rgb(119, 119, 119);
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    /* width: 150px; */
+}

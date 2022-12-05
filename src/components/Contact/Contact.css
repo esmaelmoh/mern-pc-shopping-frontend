@@ -1,0 +1,50 @@
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 8rem 4rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+}
+.cont-map{
+    width: 43vw;
+    height: 60vh;
+    flex: 1 1 25rem;
+}
+.contactForm{
+    flex: 1 1 25rem;
+    display: flex;
+    flex-direction: column; 
+    width: 43vw;
+}
+.input-field{
+    border: none;
+    background-color: rgb(248, 247, 247);
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem ;
+    margin-bottom: 0.5rem;
+}
+.text-field{
+    border: none;
+    background-color: rgb(248, 247, 247);
+    height: 30vh;
+    border-radius: 1rem;
+
+    width: 100%;
+    border-color: wheat;
+    padding: 1rem ;
+}
+.text-field, .input-field:focus{
+    outline: none;
+}
+.btn{
+    padding: 10px 30px;
+    width: fit-content;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    margin: 1rem 1rem;
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
+}

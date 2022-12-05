@@ -1,0 +1,122 @@
+.btn-add-admin{
+    padding: 8px 24px;
+    width: fit-content;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(231, 0, 96);
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+}
+.write-product{
+    display: flex;
+    justify-content: space-between;
+    margin: 8rem 6rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.form-container1{
+    flex: 1 1 20rem;
+}
+.form-container2{
+    flex: 1 1 20rem;
+}
+.btn-add-admin a{
+    color: white;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+   
+
+}
+.admin-form-btn{
+    text-align: center;
+    margin: 0 auto;
+   width: 100%;
+    margin-top: 4rem;
+    padding: 0.5rem;
+    color: white;
+    /* flex: 1 1 20rem; */
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    background-color: rgb(31, 31, 31);
+}
+.add-info{
+    /* width: 40vw; */
+    float: right;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 2rem;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    background-color: rgb(85, 38, 60);
+}
+.info-items{
+    padding-bottom: 1rem;
+    font-family: "Poppins";
+    color: rgb(116, 116, 116);
+    font-size: 12px;
+}
+.pc-form{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 4rem auto;
+}
+.product-field{
+    border: none;
+    background-color: rgb(248, 247, 247);
+    width: 100%;
+    padding: 1rem ;
+    margin-bottom: 1rem;
+}
+.select-field{
+    border: none;
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    padding: 0.5rem ;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.pc-form label{
+    margin: 1rem 0;
+}
+.check-box{
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+.add-form-title{
+    text-align:center;
+    padding:3rem;
+    font-family:fantasy;
+    letter-spacing:0.5rem;
+    font-size:60px;
+    color:rgb(56, 56, 56);
+    background-color:rgb(248, 247, 247)}
+
+@media  (max-width: 1121px) {
+    .write-product{
+        margin: 8rem 4rem;     
+    }
+    .add-form-title{
+        font-size:45px;
+    }
+   
+  }
+  @media  (max-width: 950px) {
+    .write-product{
+        margin: 8rem 2rem;     
+    }  
+    .add-form-title{
+        font-size:40px;
+    } 
+   
+  }
+  @media  (max-width: 600px) {
+  .add-form-title{
+    font-size:35px;
+}
+  }

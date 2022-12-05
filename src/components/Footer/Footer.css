@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Robot Invaders';
+    src:url(../../fonts/RobotInvaders-d9VmR.ttf) 
+  } 
+@font-face {
+    font-family: 'Alien';
+    src:url(../../fonts/AlienRavagerItalic-4B214.ttf) 
+  }
+  @font-face {
+    font-family: 'tarrget';
+    src:url(../../fonts/Azonix-1VB0.otf) 
+  } 
+.foot-container{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3rem;
+    /* height: 40vh; */
+    background-color:  rgb(43, 43, 43);
+}
+.foot-container div{
+    margin-bottom: 2rem;
+}
+.foot-info{
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color:white;
+    justify-content: space-around;
+}
+.social-med{
+    margin:auto;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.social-med .first-container{
+    display: flex;
+    justify-content: space-between;
+}
+.social-med .second-container{
+    display: flex;
+    justify-content: space-between;
+}
+.s-link{
+    margin: 0 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.s-name{
+    font-size: 12px;
+    font-family: 'Poppins';
+    color:rgb(170, 170, 170);
+    font-weight: 600;
+}
+.s-name:hover{
+    color: rgb(255, 0, 106);
+}
+.s-link :first-child {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color:white
+
+}
+.s-link :first-child:hover{
+    color: rgb(255, 0, 106);
+}
+.foot-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.foot-contact{
+    font-family: Helvetica, sans-serif;
+}
+.foot-contact h1{
+    margin-bottom: 1rem;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+.foot-contact p{
+    color: rgb(180, 180, 180);
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+}
+.foot-about{
+    color: rgb(180, 180, 180);
+    font-size: 1rem;
+    padding: 0 4rem;
+}
+.foot-about h1{
+    color: white;
+    margin-bottom: 1rem;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+.foot-logo h1{
+    font-size: 70px;
+    font-family:'tarrget';
+    font-weight: bolder;
+    color:white;
+}
+
+.foot-logo h2{
+    letter-spacing: 0.15rem;
+    font-family:'Alien';
+    color:rgb(255, 221, 230);
+}
+.developer{
+   align-self:center;
+   color:white;
+   padding-bottom:0rem;
+   font-family:"Poppins"
+}
+/* .horizontal-line{
+   background-color: rgb(255, 0, 106);
+} */
+@media  (max-width: 1121px) {
+    .s-link{
+        margin: 0 2rem;
+    }
+    
+  }
+  @media  (max-width: 950px) {
+    .developer{
+        font-size: 0.8rem;
+      }
+    .social-med .first-container{
+        display: block;
+        justify-content: space-between;
+    }
+    .social-med .second-container{
+        display: block;
+        justify-content: space-between;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+/* .foot-logo h1:hover{
+    color: rgb(255, 0, 106); 
+}
+.foot-logo h2:hover{
+    color: rgb(255, 0, 106); 
+} */

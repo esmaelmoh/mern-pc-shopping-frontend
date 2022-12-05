@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'tarrget';
+    src:url(../../fonts/Azonix-1VB0.otf) 
+  } 
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  .slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    /* margin-right: -20px; */
+    width: 95vw;
+    
+  }
+.laptops-arrival{
+    display: flex;
+    width:90vw;
+    /* justify-content: space-around; */
+    overflow-x:hidden ;
+    /* flex-wrap: wrap; */
+}
+.lap-container-arrival{
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center; */
+    align-items: center;
+}
+.new-arrival{
+    margin-top: 10rem;
+    text-align: center;
+    font-family: 'tarrget';
+    font-size: 50px;
+    margin-bottom: 8rem;
+    
+    background-color: rgb(248, 248, 248);
+    padding: 2rem;
+    color: rgb(43, 43, 43);
+}
+
+.btn-loadmore{
+    align-self: center;
+    text-align: center;
+    padding: 8px 40px;
+    background-color: white;
+    border-radius: 20px;
+    border-color: rgb(119, 119, 119);
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    /* width: 150px; */
+}
+.btncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.goto-btn{
+    display:flex;
+    flex-direction: row;
+    gap:3rem;
+   
+}
+.goto-btn div{
+    cursor: pointer;
+    border: solid;
+    border-width: 1.5px;
+    border-color: rgb(202, 202, 202);
+    border-radius: 50%;
+    padding: 8px 16px
+;}
+.goto-btn div:hover{
+    border-width: 2px;
+    border-color: rgb(163, 163, 163);
+    border-radius: 50%;
+    
+;}

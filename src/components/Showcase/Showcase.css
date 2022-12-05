@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Robot Invaders';
+    src:url(../../fonts/RobotInvaders-d9VmR.ttf) 
+  } 
+@font-face {
+    font-family: 'Alien';
+    src:url(../../fonts/AlienRavagerItalic-4B214.ttf) 
+  }
+  @font-face {
+    font-family: 'tarrget';
+    src:url(../../fonts/Azonix-1VB0.otf) 
+  }  
+.showcase-container{
+    height: 60vh;
+    /* background-color: rgb(43, 43, 43); */
+    /* background-image: linear-gradient(rgba(0,0,0, 0.2),rgba(0,0,0,0.8)),
+                  url("../../../public/images/bg.png"); */
+    background-image: linear-gradient(rgba(43, 43, 43, 0.8),rgba(0,0,0,0.8)),
+                  url("../../../public/images/bg.png");
+    
+    background-position: center;
+    background-size: cover;
+    /* opacity: 0.95; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+}
+.showcase-container h1{
+    font-family:'tarrget';
+    font-weight: bolder;
+    color:white;
+    letter-spacing: 1.1rem;
+    font-size: 100px;
+    text-shadow: 5px 5px 5px rgb(39, 39, 39);;
+}
+.showcase-container h2{
+    font-family:'Alien';
+    color:rgb(255, 221, 230);
+    letter-spacing: 0.5rem;
+    font-size: 30px;
+
+}
+@media  (max-width: 1121px) {
+  .showcase-container h1{
+    font-size: 80px;
+}
+.showcase-container h2{
+  font-size: 27px;
+
+}
+  
+}
+
+@media  (max-width: 700px) {
+  .showcase-container h1{
+    font-size: 60px;
+}
+.showcase-container h2{
+  font-size: 24px;
+
+}
+}
