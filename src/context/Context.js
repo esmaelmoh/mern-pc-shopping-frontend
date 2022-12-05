@@ -17,7 +17,7 @@ export const ContextProvider = ({ children }) => {
   }, [state.admin]);
 
   // const url = "http://localhost:5000/";
-  const url = "https://mern-pc-shopping-api.onrender.com";
+  const url = "https://mern-pc-shopping-api.onrender.com/";
   return (
     <Context.Provider
       value={{
