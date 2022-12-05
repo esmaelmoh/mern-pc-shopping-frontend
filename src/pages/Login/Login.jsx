@@ -1,8 +1,10 @@
 import React, { useContext, useRef, useState } from 'react'
 import { Context } from "../../context/Context";
+import {useNavigate} from 'react-router-dom'
 import axios from "axios";
 import './Login.css'
 const Login = () => {
+  const navigate = useNavigate()
   const userRef = useRef();
   const passwordRef = useRef();
   const { dispatch, isFetching ,url,error} = useContext(Context);
@@ -17,7 +19,8 @@ const Login = () => {
       console.log(res.data)
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
       
-      res.data && window.location.replace("/admin");
+      // res.data && window.location.replace("/admin");
+      res.data && navigate('admin')
 
     } catch (err) {
       console.log(err)
