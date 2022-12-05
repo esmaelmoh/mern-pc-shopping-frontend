@@ -16,9 +16,11 @@ export const ContextProvider = ({ children }) => {
     localStorage.setItem("admin", JSON.stringify(state.admin));
   }, [state.admin]);
 
+  const url = "http://localhost:5000/";
   return (
     <Context.Provider
       value={{
+        url:url,
         admin: state.admin,
         isFetching: state.isFetching,
         error: state.error,

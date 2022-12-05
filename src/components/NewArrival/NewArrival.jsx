@@ -40,15 +40,19 @@ const Laptops = ({pcs,screenSize}) => {
        {/* <div className='laptops-arrival'> */}
    
    <Slider {...settings} className = "slider">
-      {loadmore?pcs.map((item)=>{
+      {
+      loadmore?
+      pcs.map((item)=>{
         return( 
           <Pc pcItem= {item}/>
            )
-      }):limitedPc.map((item)=>{
+      })
+      :limitedPc.map((item)=>{
         return( 
           <Pc pcItem= {item}/>
            )
-      })}
+      })
+      }
     </Slider>
     {/* </div> */}
    {/* </div> */}

@@ -3,9 +3,10 @@ import { Context } from '../../context/Context'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
 const BlogCard = ({blog}) => {
+  const {admin, url}= useContext(Context)
     const handleDelete= async(e)=>{
         try{
-          await axios.delete(`http://localhost:5000/backend/blogs/${blog._id}`)
+          await axios.delete(`${url}backend/blogs/${blog._id}`)
           window.location.replace('/')
         }catch(err){
           console.log(err)
@@ -13,7 +14,7 @@ const BlogCard = ({blog}) => {
       }
 
      
-    const {admin}= useContext(Context)
+   
   return (
     <>
               

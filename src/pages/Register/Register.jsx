@@ -1,17 +1,18 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Register.css'
 import axios from 'axios'
+import { Context } from '../../context/Context';
 const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
-
+  const { url} = useContext(Context);
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(false);
     try {
-      const res = await axios.post("http://localhost:5000/backend/auth/register", {
+      const res = await axios.post(`${url}backend/auth/register`, {
         username,
         email,
         password,

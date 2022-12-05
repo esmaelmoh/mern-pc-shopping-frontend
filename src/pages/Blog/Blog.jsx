@@ -6,7 +6,7 @@ import BlogCard from './BlogCard'
 
 const Blog = () => {
  
-  const {admin}= useContext(Context)
+  const {admin,url}= useContext(Context)
   const [blogTitle, setBlogTitle]= useState('')
   const [blogContent,setBlogContent] = useState('')
   const [blogs, setBlogs]= useState([])
@@ -15,7 +15,7 @@ const Blog = () => {
     e.preventDefault()
     
     try {
-     const res = await axios.post("http://localhost:5000/backend/blogs",{
+     const res = await axios.post(`${url}backend/blogs`,{
       title:blogTitle,
       desc:blogContent
     })
@@ -30,7 +30,7 @@ const Blog = () => {
   const fetchBlogs = async ()=>{
     // const res = await axios.get("http://localhost:5000/backend/blogs")
     try {
-      const res = await axios.get("http://localhost:5000/backend/blogs")
+      const res = await axios.get(`${url}backend/blogs`)
       console.log(res.data)
       setBlogs(res.data)
      } catch (err) {

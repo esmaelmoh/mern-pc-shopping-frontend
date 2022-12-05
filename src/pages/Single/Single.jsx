@@ -3,7 +3,9 @@ import SinglePost from '../../components/SinglePost/SinglePost'
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router";
+import { Context } from '../../context/Context';
 const Single = () => {
+  const { url} = useContext(Context);
   const location = useLocation();
   let data = null
   const path = location.pathname.split("/")[2];
@@ -11,7 +13,7 @@ const Single = () => {
   const [singelPc , setSinglePc]= useState({})
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get("http://localhost:5000/backend/pcs/" + path);
+      const res = await axios.get(`${url}backend/pcs/` + path);
       setSinglePc(res.data)
     //  console.log( typeof(res.data))
     };

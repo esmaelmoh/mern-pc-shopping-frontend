@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Footer from '../../components/Footer/Footer'
 import Laptops from '../../components/Laptops/Laptops'
 import Navbar from '../../components/Navbar/Navbar'
@@ -10,6 +10,7 @@ import {Link, useLocation} from 'react-router-dom'
 import NewArrival from '../../components/NewArrival/NewArrival'
 import {  CSSProperties } from "react";
 import HashLoader from "react-spinners/HashLoader";
+import { Context } from '../../context/Context'
 
 const cssOverride = {
   display: "block",
@@ -18,16 +19,19 @@ const cssOverride = {
 };
 
 const Home = ({windowSize}) => {
+  const { url} = useContext(Context);
+
  const [pcs , setPcs]= useState([])
  const {search} = useLocation()
-
+console.log(url)
  const [loading, setLoading] =useState(false)
   useEffect(() => {
 
     const getPost = async () => {
       setLoading(true)
-      const res = await axios.get("http://localhost:5000/backend/pcs/" +search );
-      // console.log(res.data)
+      const res = await axios.get(`${url}backend/pcs/` +search );
+      console.log(`${url}` +search)
+      console.log(res.data)
       setPcs(res.data)
       setLoading(false)
     };

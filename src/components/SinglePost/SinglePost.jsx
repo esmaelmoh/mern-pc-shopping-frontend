@@ -7,12 +7,12 @@ import {Link} from 'react-router-dom'
 const SinglePost = ({singelPc}) => {
     // console.log(singelPc.price)
   console.log(singelPc.info)
-  const {admin}= useContext(Context)
-    const PF = "http://localhost:5000/images/";
+  const {admin,url}= useContext(Context)
+  const PF = `${url}images/`;
   
     const handleDelete = async()=>{
       try{
-        await axios.delete("http://localhost:5000/backend/pcs/"+singelPc._id)
+        await axios.delete(`${url}backend/pcs/`+singelPc._id)
         window.location.replace('/')
       }
       catch(err){

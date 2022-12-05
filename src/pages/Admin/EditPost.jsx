@@ -8,7 +8,7 @@ const EditPost = () => {
   const path = location.pathname.split("/")[3];
   console.log(path)
 
-  const { admin, dispatch } = useContext(Context);
+  const { admin, url, dispatch } = useContext(Context);
 
     const [infos , setInfos] = useState([
 
@@ -50,7 +50,7 @@ const EditPost = () => {
     
     // const res = await axios.get("http://localhost:5000/backend/blogs")
     try {
-      const res = await axios.get("http://localhost:5000/backend/pcs/" +path)
+      const res = await axios.get(`${url}backend/pcs/` +path)
       console.log(res.data)
       setPcDetails(res.data)
       setCore(res.data.core)
@@ -98,11 +98,11 @@ const EditPost = () => {
     data.append("file", file);
     newPc.pcImage = filename;
     try {
-      await axios.post("http://localhost:5000/backend/upload", data);
+      await axios.post(`${url}backend/upload`, data);
     } catch (err) {}
   }
     try {
-      const res = await axios.put("http://localhost:5000/backend/pcs/"+path ,newPc );
+      const res = await axios.put(`${url}backend/pcs/`+path ,newPc );
       console.log(res.data)      
       res.data && window.location.replace("/");
 

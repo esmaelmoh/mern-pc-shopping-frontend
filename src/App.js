@@ -47,7 +47,7 @@ console.log(windowSize)
         <Route path="/login" element={<Login/>}/>
         {admin&&<Route path="/admin" element={<Admin/>}/>}
         {admin&&<Route path="/admin/edit/:id" element={<EditPost/>}/>}
-        {admin&&<Route path="/register" element={<Register/>}/>}
+       {admin&& <Route path="/register" element={<Register/>}/>}
         {admin&&<Route path="/edit/:id" element={<EditBlog/>}/>}
         <Route path='/*' element={<PageNotFound/>} />
       </Routes>

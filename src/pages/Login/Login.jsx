@@ -5,12 +5,12 @@ import './Login.css'
 const Login = () => {
   const userRef = useRef();
   const passwordRef = useRef();
-  const { dispatch, isFetching ,error} = useContext(Context);
+  const { dispatch, isFetching ,url,error} = useContext(Context);
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axios.post("http://localhost:5000/backend/auth/login", {
+      const res = await axios.post(`${url}backend/auth/login`, {
         username: userRef.current.value,
         password: passwordRef.current.value,
       });
