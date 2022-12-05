@@ -20,7 +20,7 @@ const Login = () => {
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
       
       // res.data && window.location.replace("/admin");
-      res.data && navigate('admin')
+      res.data && navigate(-1)
 
     } catch (err) {
       console.log(err)
