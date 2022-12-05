@@ -4,7 +4,7 @@ import './Admin.css'
 import axios from 'axios'
 import { Context } from "../../context/Context";
 const Admin = () => {
-  const { admin, dispatch } = useContext(Context);
+  const { admin,url, dispatch } = useContext(Context);
 
     const [infos , setInfos] = useState([
 
@@ -72,11 +72,11 @@ const Admin = () => {
     data.append("file", file);
     newPc.pcImage = filename;
     try {
-      await axios.post("http://localhost:5000/backend/upload", data);
+      await axios.post(`${url}backend/upload`, data);
     } catch (err) {}
   }
     try {
-      const res = await axios.post("http://localhost:5000/backend/pcs/pc",newPc );
+      const res = await axios.post(`${url}backend/pcs/pc`,newPc );
       console.log(res.data)      
       res.data && window.location.replace("/");
 

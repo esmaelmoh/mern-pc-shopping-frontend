@@ -7,6 +7,7 @@ const EditBlog = () => {
   const [blogContent,setBlogContent] = useState('')
   const [blogs, setBlogs]= useState([])
   const location = useLocation();
+  const {admin,url}= useContext(Context)
   const path = location.pathname.split("/")[2];
   console.log(path)
   
@@ -14,7 +15,7 @@ const EditBlog = () => {
     
     // const res = await axios.get("http://localhost:5000/backend/blogs")
     try {
-      const res = await axios.get("http://localhost:5000/backend/blogs/" +path)
+      const res = await axios.get(`${url}backend/blogs/` +path)
       console.log(res.data)
     //   setBlogs(res.data)
       setBlogContent(res.data.desc)
@@ -30,7 +31,7 @@ const EditBlog = () => {
   const handleSubmit = async(e)=>{
     e.preventDefault()
     try {
-     const res = await axios.put("http://localhost:5000/backend/blogs/"+path,{
+     const res = await axios.put(`${url}backend/blogs/`+path,{
       title:blogTitle,
       desc:blogContent
     })
