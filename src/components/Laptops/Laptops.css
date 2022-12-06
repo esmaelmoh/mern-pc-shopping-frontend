@@ -36,3 +36,10 @@
     cursor: pointer;
     /* width: 150px; */
 }
+
+
+@media  (max-width: 700px) {
+    .on-sale{
+        font-size: 25px;
+    }
+}
