@@ -2,8 +2,8 @@
     width: 50vw;
     min-width: 300px;
     padding: 15px 40px;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
     font-size: 17px;
     border: none;
     border-radius: 30px;
@@ -28,6 +28,6 @@
     color: rgb(44, 44, 44);
     font-size: 20px;
     position: absolute;
-    top: 80px;
+    top: 70px;
     right: 25px;
 }
