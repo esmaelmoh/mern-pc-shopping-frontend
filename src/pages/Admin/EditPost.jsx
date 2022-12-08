@@ -134,7 +134,7 @@ const addInfo=(e)=>{
           <label  htmlFor="">Model:</label>
           <input required onChange={handleChange} type="text" value={pcDetails.pcModel}name="pcModel" id="" className='product-field'/>
           <label htmlFor="">Image:</label>
-          <input  required type="file" onChange={(e)=>setFile(e.target.files[0])}  name="" id="" className='product-field' />
+          <input  required type="file" defaultValue={pcDetails.pcImage} onChange={(e)=>setFile(e.target.files[0])}  name="" id="" className='product-field' />
           <label htmlFor="">Price:</label>
           <input required type="number" onChange={handleChange}name="price" value={pcDetails.price} id="" className='product-field' />
           <label htmlFor="" >Available:</label>
@@ -143,7 +143,7 @@ const addInfo=(e)=>{
           <br />
           <label htmlFor="">Condition:</label>
           <br />
-          <select name="condition" required id="" className='select-field' value={condition} onChange={(e)=>{setCondition(e.target.value)}}>
+          <select name="condition" defaultValue={pcDetails.condition} required id="" className='select-field' value={condition} onChange={(e)=>{setCondition(e.target.value)}}>
             <option value="NEW">NEW</option>
             <option value="OPEN BOX">OPEN BOX</option>
             <option value="SLIGHTLY USED">SLIGHTLY USED</option>
@@ -157,7 +157,7 @@ const addInfo=(e)=>{
         
           <label htmlFor="">Core:</label>
           <br />
-          <select name="core" id="" onChange={(e)=>{setCore(e.target.value)}} value={core} className='select-field'>
+          <select name="core" id="" defaultValue={pcDetails.core} onChange={(e)=>{setCore(e.target.value)}} value={core} className='select-field'>
             <option value="i3">i3</option>
             <option value="i5">i5</option>
             <option value="i7">i7</option>
