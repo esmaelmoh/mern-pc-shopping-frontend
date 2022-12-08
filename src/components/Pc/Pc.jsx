@@ -11,7 +11,7 @@ const Pc = ({pcItem}) => {
   // console.log(pcItem.price)
   return (
     <Link to={`/pcs/${pcItem?._id}`} style={{textDecoration:'none',color:'black'}}>
-    <div className='pc-container'>
+    <div className='pc-container' data-aos="zoom-in">
         <img src={PF+pcItem?.pcImage} alt="" />
         <div className='first-desc'>
             <p className='model'>{pcItem?.pcModel.split(' ').slice(0, 2).join(' ')} </p>
