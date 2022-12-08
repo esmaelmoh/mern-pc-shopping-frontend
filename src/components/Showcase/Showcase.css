@@ -9,6 +9,10 @@
   @font-face {
     font-family: 'tarrget';
     src:url(../../fonts/Azonix-1VB0.otf) 
+  } 
+  @font-face {
+    font-family: 'newfont';
+    src:url(../../fonts/JosefinSans-VariableFont_wght.ttf) 
   }  
 .showcase-container{
     height: 60vh;
@@ -42,6 +46,15 @@
     font-size: 30px;
 
 }
+.showcase-container p{
+  margin-top: 1rem;
+  padding: 1.4rem ;
+  /* padding-top: 8rem; */
+  font-family:'newfont';
+  color:rgb(201, 201, 201);
+  font-size: 23px;
+
+}
 @media  (max-width: 1121px) {
   .showcase-container h1{
     font-size: 80px;
@@ -55,10 +68,21 @@
 
 @media  (max-width: 700px) {
   .showcase-container h1{
+    padding-top: 40%;
     font-size: 60px;
+    /* flex: 3; */
 }
 .showcase-container h2{
   font-size: 24px;
+  flex: 3;
 
+}
+.showcase-container p{
+  text-align: center;
+  color:rgb(131, 131, 131);
+  font-size: 18px;
+  
+padding-left: 2.4rem;
+padding-right: 2.4rem;
 }
 }
