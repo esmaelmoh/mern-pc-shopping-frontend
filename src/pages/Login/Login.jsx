@@ -32,10 +32,9 @@ const Login = () => {
     <div>
         
     <form action="" className='login-form' onSubmit={handleSubmit}>
+        <p style={{color:'red'}}>the user name and the password is "admin"</p>
         <label htmlFor="">Name:</label>
-        <input className='login-field' required type="text" name="" placeholder='Esmael Mohammed' ref={userRef} id="" />
-        {/* <label htmlFor="">Email Address</label>
-        <input type="text" name="" placeholder='Esmael Mohammed' id="" /> */}
+        <input className='login-field' required type="text" name="" placeholder='admin' ref={userRef} id="" />
         <label htmlFor="">Password:</label>
         <input className='login-field' required type="password" name="" placeholder='................'  ref={passwordRef} id="" />
         <button type="submit" className='login-btn'>Login </button>

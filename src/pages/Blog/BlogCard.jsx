@@ -18,7 +18,7 @@ const BlogCard = ({blog}) => {
    
   return (
          <>     
-              <h2 className='blog-title'>{blog.title}</h2>
+              <h3 className='blog-title'>{blog.title}</h3>
                         <p className='blog-des'>{readmore?blog.desc:blog.desc.substring(0,300)} <span style={{color:'rgb(255, 0, 106)',cursor:
                       'pointer'}} onClick={()=>setReadmore(!readmore)}>{readmore?'readless':'readmore'}</span> </p>
                               {admin&&(
@@ -27,7 +27,7 @@ const BlogCard = ({blog}) => {
                                 <button className='btn-d' onClick={handleDelete}>Delete</button>
                             </div>
                               )}
-              <p style={{color:'grey',textTransform:'lowercase'}}>{admin&&admin.username}</p>
+              {/* <p style={{color:'grey',textTransform:'lowercase'}}>{admin&&admin.username}</p> */}
                     
     </>
   )
