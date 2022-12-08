@@ -53,7 +53,7 @@ const SinglePost = ({singelPc}) => {
                 <p><span >💎graphics</span> :{singelPc.graphics}</p>
                 <p><span >📼 Storage </span>: {singelPc.storage}</p>
                 <p><span >⏳Ram </span>:{singelPc.ram}</p>
-                <p><span >❤️ screen :</span> {singelPc.screen}</p>
+                <p><span >❤️ Screen :</span> {singelPc.screen}</p>
                 <p><span >🔋Battery :</span>{singelPc.battery}</p>
                 <p className='other'> {singelPc.other1}</p>
                 <p className='other'>{singelPc.other2}</p>
@@ -61,7 +61,7 @@ const SinglePost = ({singelPc}) => {
                 </div>
                 <div className='desc1'>
                 {/* {console.log(typeof(infos))} */}
-                {singelPc.info? (<><h2 className='more-info'>More Info</h2><hr className='more-info'/></>):''
+                {singelPc.info?.length?(<><h2 className='more-info'>More Info</h2><hr className='more-info'/></>):''
                 }
                 {singelPc.info?.map((item)=>{
                   return <div className='more-info-container'>
@@ -70,7 +70,7 @@ const SinglePost = ({singelPc}) => {
                 })}
                 </div>
                 <div>
-                <h3>0912759900 or 0920153333</h3> 
+                <h3>Call:- <span style={{color:'rgb(255, 0, 106)'}}>0912759900</span>  or <span style={{color:'rgb(255, 0, 106)'}}>0920153333</span> </h3> 
                     <div className='btn-container'>
                         <button  className='btn'><a href="https://www.telegram.org/" > FOLLOW US ON TELELGRAM</a></button>
                         <button  className='btn'><Link to="/contact" > CONTACT US</Link></button>
