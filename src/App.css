@@ -1,3 +1,6 @@
+:root {
+  color-scheme: light only;
+}
 *{
   /* text-align: center; */
   box-sizing: border-box;
