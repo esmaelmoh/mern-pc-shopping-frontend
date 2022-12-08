@@ -57,7 +57,7 @@ const Laptops = ({pcs,screenSize}) => {
     {/* </div> */}
    {/* </div> */}
   <div className="btncontainer">
-  <button className='btn-loadmore' onClick={()=>setLoadmore(!loadmore)}>LOAD MORE</button>
+  <p className='btn-loadmore' ></p>
   </div>
   
    </div>
