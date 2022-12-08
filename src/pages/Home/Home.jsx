@@ -47,10 +47,10 @@ console.log(url)
       {
         loading? 
         <HashLoader
-        color='#ff006a'
+        color='#ff0593'
         loading={loading}
         cssOverride={cssOverride}
-        size={70}
+        size={40}
         aria-label="Loading Spinner"
         data-testid="loader"
       />:

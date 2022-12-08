@@ -70,7 +70,7 @@ const SinglePost = ({singelPc}) => {
                 })}
                 </div>
                 <div>
-                    <h1>Call us :- 0912759900 or 0920153333</h1>
+                <h3>0912759900 or 0920153333</h3> 
                     <div className='btn-container'>
                         <button  className='btn'><a href="https://www.telegram.org/" > FOLLOW US ON TELELGRAM</a></button>
                         <button  className='btn'><Link to="/contact" > CONTACT US</Link></button>
