@@ -11,6 +11,7 @@ import NewArrival from '../../components/NewArrival/NewArrival'
 import {  CSSProperties } from "react";
 import HashLoader from "react-spinners/HashLoader";
 import { Context } from '../../context/Context'
+import Banner from '../../components/AdvertBanner/Banner'
 
 const cssOverride = {
   display: "block",
@@ -55,6 +56,7 @@ console.log(url)
         data-testid="loader"
       />:
       (<> <NewArrival screenSize={windowSize} pcs={pcs} />
+          <Banner/>
            <Laptops pcs={pcs}/></>)
       }
        

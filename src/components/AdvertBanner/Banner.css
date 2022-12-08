@@ -14,8 +14,8 @@
     font-family: 'newfont';
     src:url(../../fonts/JosefinSans-VariableFont_wght.ttf) 
   }  
-.showcase-container{
-    height: 60vh;
+.banner-container{
+    height: 30vh;
     /* background-color: rgb(43, 43, 43); */
     /* background-image: linear-gradient(rgba(0,0,0, 0.2),rgba(0,0,0,0.8)),
                   url("../../../public/images/bg.png"); */
@@ -29,62 +29,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 2rem; */
+    margin-bottom: 6rem;
 }
-.showcase-container h1{
+.banner-container h1{
     font-family:'tarrget';
     font-weight: bolder;
     color:white;
     letter-spacing: 1.1rem;
-    font-size: 100px;
+    font-size: 70px;
     text-shadow: 5px 5px 5px rgb(39, 39, 39);;
 }
-.showcase-container h2{
-    font-family:'Alien';
-    color:rgb(255, 221, 230);
-    letter-spacing: 0.5rem;
-    font-size: 30px;
 
-}
-.showcase-container p{
-  margin-top: 1rem;
-  padding: 1.4rem ;
-  /* padding-top: 8rem; */
-  font-family:'newfont';
-  color:rgb(201, 201, 201);
-  font-size: 23px;
-
-}
 @media  (max-width: 1121px) {
-  .showcase-container h1{
-    font-size: 80px;
-}
-.showcase-container h2{
-  font-size: 27px;
-
-}
-  
+  .banner-container h1{
+    font-size: 50px;
+}  
 }
 
 @media  (max-width: 700px) {
-  .showcase-container{
-    height: 50vh;}
-  .showcase-container h1{
-    padding-top: 35%;
-    font-size: 60px;
+  .banner-container h1{
+    font-size: 35px;
+    padding:0 1rem;
+    letter-spacing: 0.78rem;
     /* flex: 3; */
 }
-.showcase-container h2{
-  font-size: 24px;
-  flex: 3;
+.banner-container{
+  height: 25vh;
+}
 
-}
-.showcase-container p{
-  text-align: center;
-  color:rgb(131, 131, 131);
-  font-size: 18px;
-  
-padding-left: 2.4rem;
-padding-right: 2.4rem;
-}
 }
