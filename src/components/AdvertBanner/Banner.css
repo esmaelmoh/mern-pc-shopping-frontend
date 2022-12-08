@@ -48,13 +48,13 @@
 
 @media  (max-width: 700px) {
   .banner-container h1{
-    font-size: 30px;
+    font-size: 25px;
     padding:0 1rem;
     letter-spacing: 0.78rem;
     /* flex: 3; */
 }
 .banner-container{
-  height: 25vh;
+  height: 20vh;
 }
 
 }

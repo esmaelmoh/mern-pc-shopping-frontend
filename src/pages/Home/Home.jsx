@@ -55,7 +55,8 @@ console.log(url)
         aria-label="Loading Spinner"
         data-testid="loader"
       />:
-      (<> <NewArrival screenSize={windowSize} pcs={pcs} />
+      (<> 
+          <NewArrival screenSize={windowSize} pcs={pcs} />
           <Banner/>
            <Laptops pcs={pcs}/></>)
       }
