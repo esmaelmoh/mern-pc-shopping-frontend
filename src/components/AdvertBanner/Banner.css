@@ -48,7 +48,7 @@
 
 @media  (max-width: 700px) {
   .banner-container h1{
-    font-size: 35px;
+    font-size: 30px;
     padding:0 1rem;
     letter-spacing: 0.78rem;
     /* flex: 3; */
