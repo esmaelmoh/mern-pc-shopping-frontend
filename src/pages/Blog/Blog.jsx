@@ -3,24 +3,33 @@ import './Blog.css'
 import axios from 'axios'
 import { Context } from '../../context/Context'
 import BlogCard from './BlogCard'
+import HashLoader from 'react-spinners/HashLoader'
 
 const Blog = () => {
  
+  const cssOverride = {
+    display: "block",
+    margin: "5rem auto",
+    borderColor: "rgb(255, 0, 106)",
+  };
+  
   const {admin,url}= useContext(Context)
   const [blogTitle, setBlogTitle]= useState('')
   const [blogContent,setBlogContent] = useState('')
   const [blogs, setBlogs]= useState([])
-
+  const [loading, setLoading] = useState(false)
   const handleSubmit = async(e)=>{
     e.preventDefault()
     
     try {
+      setLoading(true)
      const res = await axios.post(`${url}backend/blogs`,{
       title:blogTitle,
       desc:blogContent
     })
     setBlogContent("")
     setBlogTitle("")
+    setLoading(false)
     // setBlogs(res.data)
     console.log(res.data)
     } catch (err) {
@@ -53,18 +62,25 @@ const Blog = () => {
       </form>
     </div>:''}
         <h1 style={{textAlign:'center',color:'rgb(77, 77, 77)',}}>Tech Blogs</h1>
-
-        {
-          blogs.map((blog)=>{
-            return(
-                <div className="blog-container" key={blog._id}>
-                  <BlogCard blog={blog} />
-                </div>
-            )
-          })
-        
+    {loading?<HashLoader
+                  color='#ff0593'
+                  loading={loading}
+                  cssOverride={cssOverride}
+                  size={40}
+                  aria-label="Loading Spinner"
+                  data-testid="loader"
+                />:(
+      blogs.map((blog)=>{
+        return(
+            <div className="blog-container" data-aos="zoom-in-up" data-aos-easing="linear"
+            data-aos-duration="1000" key={blog._id}>
+              <BlogCard blog={blog} />
+            </div>
+        )
+      })
     
-    }
+                )
+}
    
    
     </div>

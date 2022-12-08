@@ -4,8 +4,8 @@ const Showcase = () => {
   return (
     <div className='showcase-container'>
       
-        <h1>Addis</h1>
-        <h2>Computer</h2>
+        <h1 data-aos="fade-right" data-aos-duration="3000">Addis</h1>
+        <h2 data-aos="fade-left">Computer</h2>
     </div>
   )
 }

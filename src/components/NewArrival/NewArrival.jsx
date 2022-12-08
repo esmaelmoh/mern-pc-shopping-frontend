@@ -33,7 +33,7 @@ const Laptops = ({pcs,screenSize}) => {
   let limitedPc = pcs.slice(0,6)
 
   return (
-    <div>
+    <div data-aos="fade-up"   data-aos-duration="2000">
     
     {/* <div className='lap-container-arrival'> */}
     <h1 className='new-arrival'>NEW ARRIVAL</h1>

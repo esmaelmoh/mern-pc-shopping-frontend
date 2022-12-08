@@ -7,7 +7,7 @@ const Laptops = ({pcs}) => {
   console.log(pcs)
   let limitedPc = pcs.slice(0,6)
   return (
-    <div className='lap-container'>
+    <div className='lap-container' data-aos="fade-up"   data-aos-duration="2000">
     <h1 className='on-sale'>ON SALE PRODUCTS</h1>
     <div className='laptops'>
     {
